@@ -1,0 +1,56 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+#oferta-container {
+    background-color: rgb(63, 133, 213);
+    padding-left: 200px;
+    padding-top: 50px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#oferta-botoes-container {
+    display: flex;
+   
+    padding: 30px;
+}
+
+.botao-oferta {
+    border-radius: 50px;
+    width: 150px;
+    padding: 14px;
+}
+
+#botao-comece-agora {
+    border-color: black;
+    color: white;
+    background-color: black;
+    margin-right: 10px;
+}
+
+#botao-ver-planos {
+    border-color: white;
+    background-color: #00000000;
+}
+
+#span-termos {
+    color: aliceblue;
+    font-size: 14px;
+}
