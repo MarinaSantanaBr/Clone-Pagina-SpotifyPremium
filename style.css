@@ -5,6 +5,10 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+button {
+    border-style: double;
+}
+
 div {
     display: flex;
 }
@@ -25,7 +29,7 @@ body {
 }
 
 #icone-container {
-
+    padding-right: 6px;
 }
 
 #logo {
@@ -40,7 +44,7 @@ body {
 
 #menu-container {}
 
-.item-controle {
+.nav-item {
     color: aliceblue;
     text-decoration: none;
     font-size: 15px;
@@ -49,11 +53,17 @@ body {
     padding: 28px 16px;
 }
 
+a.nav-item:hover {
+    color: #1ed760;
+
+}
+
+
+
 #oferta-container {
     flex-direction: column;
-    background-color: rgb(63, 133, 213);
-    padding-left: 200px;
-    padding-top: 50px;
+    background-color: #1d75de;
+    padding: 30px 200px;
 }
 
 h1 {
@@ -71,7 +81,7 @@ p {
 #oferta-botoes-container {
     display: flex;
 
-    padding: 30px;
+    padding: 30px 0px;
 }
 
 .botao-oferta {
@@ -94,5 +104,57 @@ p {
 
 #span-termos {
     color: aliceblue;
-    font-size: 14px;
+    font-size: 10px;
+}
+
+#beneficios {
+    background-color:#efefef ;
+}
+
+#titulo {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#beneficios-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 200px ;
+}
+
+.beneficio-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficio-image {
+    width: 142px;
+    height: 142px;
+}
+
+.beneficio-titulo {
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.beneficio-desricao {
+    color: black;
+    font-size: 16px;
+}
+
+#planos {
+    background-color:#efefef;
+}
+
+#texto1 {
+    color: black;
+    text-align: center;
+}
+
+#texto2 {
+    color: black;
+    text-align: center;
 }
