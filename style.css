@@ -17,18 +17,34 @@ body {
     margin: 0px;
 }
 
-#header-container {
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: aliceblue;
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer {
+    background: black;
+}
+
+#header-conteiner {
     display: flex;
     background-color: black;
     padding: 0px 200px;
 }
 
-#logo-container {
+#logo-conteiner {
     flex: 1;
     align-items: center;
 }
 
-#icone-container {
+#icone-conteiner {
     padding-right: 6px;
 }
 
@@ -36,13 +52,13 @@ body {
     height: 40px;
 }
 
-#nome-container {
+#nome-conteiner {
     color: aliceblue;
     font-weight: bold;
     font-size: 24px;
 }
 
-#menu-container {}
+#menu-conteiner {}
 
 .nav-item {
     color: aliceblue;
@@ -58,27 +74,31 @@ a.nav-item:hover {
 
 }
 
-
-
-#oferta-container {
+.secao-conteiner {
     flex-direction: column;
+    padding: 50px 200px;
+}
+
+.secao-titulo {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px 0px;
+    padding-bottom: 50px;
+}
+
+#oferta {
     background-color: #1d75de;
-    padding: 30px 200px;
+    color: white;
 }
 
-h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
-    color: aliceblue;
+#oferta-titulo {
+    text-align: left;
+    color: white;
+    padding-bottom: 0px;
 }
 
-p {
-    color: aliceblue;
-    font-size: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#oferta-botoes-container {
+#oferta-botoes-conteiner {
     display: flex;
 
     padding: 30px 0px;
@@ -99,6 +119,7 @@ p {
 
 #botao-ver-planos {
     border-color: white;
+    color: white;
     background-color: #00000000;
 }
 
@@ -107,24 +128,18 @@ p {
     font-size: 10px;
 }
 
-#beneficios {
-    background-color:#efefef ;
+#beneficios {}
+
+#beneficios-conteiner {
+    flex-direction: column;
 }
 
-#titulo {
-    color: black;
-    text-align: center;
-    font-weight: bold;
-    padding: 20px;
-}
-
-#beneficios-container {
+#beneficios-lista {
     display: flex;
     justify-content: space-between;
-    padding: 0px 200px ;
 }
 
-.beneficio-container {
+.beneficio {
     flex-direction: column;
     align-items: center;
 }
@@ -146,15 +161,124 @@ p {
 }
 
 #planos {
-    background-color:#efefef;
+    background-color: #efefef;
 }
 
-#texto1 {
+#planos-titulo {
+    padding-bottom: 0px;
+}
+
+#planos-desc {
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+#planos-lista {
+    margin-top: 40px;
+}
+
+#planos-lista div:first-child {
+    margin-left: 0px;
+}
+
+.plano-conteiner {
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgb(255 255 255) 0px 0px 0px 0px, rgb(0 0 0 / 30%) 0px 0px 8px;
+}
+
+.plano-conteiner p {
+    margin: 2px 0px;
+}
+
+#plano-escolha {
     color: black;
     text-align: center;
 }
 
-#texto2 {
-    color: black;
-    text-align: center;
+.plano-destaques-conteiner {
+    flex-wrap: wrap;
+}
+
+.plano-destaque {
+    padding: 4px 8px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #1d75de;
+}
+
+.plano-destaque-principal {
+    background-color: #1d75de;
+    color: white;
+}
+
+.plano-destaque-secundario {
+    margin: 10px 0px;
+    color: #1d75de;
+}
+
+.separador {
+    height: 0.5px;
+    background-color: black;
+    margin-top: 12px;
+}
+
+.plano-tipo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.plano-preco {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plano-contas {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.plano-recurso {
+    padding: 6px 0px;
+}
+
+.plano-recurso-icone {
+    font-size: 20px;
+    padding-top: 6px;
+    margin-right: 12px;
+}
+
+.plano-acoes-container {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    color: rgb(83, 83, 83);
+}
+
+.plano-acoes-container p {
+    font-size: 12px;
+}
+
+.plano-acoes-container p>a {
+    color: rgb(83, 83, 83);
+}
+
+
+.plano-acao {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 20px 0px;
+    border-radius: 50px;
+    padding: 14px;
+    border-color: black;
+    color: white;
+    background-color: black;
 }
